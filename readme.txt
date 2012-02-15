@@ -1,6 +1,11 @@
 /******************************************************************
-Bones 
+Lighter Bones 
 A Lightweight Wordpress Development Theme
+
+Lighter Bones is a simpler, leaner, tighter version of Bones. I prefer working with fewer defaults, 
+especially in terms of CSS.
+
+----------
 
 Bones is designed to make the life of developers easier. It's built
 using HTML5 & has a strong semantic foundation. It was updated recently
