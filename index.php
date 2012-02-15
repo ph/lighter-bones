@@ -3,12 +3,9 @@
 			<div id="content">
 
 				<section role="main">
-
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
 					<?php
 					if (have_posts()) : while (have_posts()) : the_post();
-						include (TEMPLATEPATH . "/single_post_content.php");
+						include (TEMPLATEPATH . "/single_post-content.php");
 
 						comments_template();
 

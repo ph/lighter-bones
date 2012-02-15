@@ -17,12 +17,81 @@ can easily revert back to the original, but that's
 totally up to you. Happy Developing!
 ******************************************************************/
 
+/******************************************************************
+Temporary classes to get started, remove this section as soon as
+you start styling.
+******************************************************************/
+
+body {
+	background-color: #f1ece2;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 14px;
+	color: #444;
+}
+
+a, a:visited {
+	padding: 3px 0px 0 0px;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover, a:focus {
+	background-color: #b1e9ff;
+	text-decoration: none;
+}
+
+#wrap {
+	width: 900px;
+	margin: 40px auto;
+	text-align: left;
+}
+
+header[role=banner],
+section[role=main],
+#sidebar1 {
+	background-color: #eee8dd;
+	border-top: 3px solid #e9e2d5;
+	border-bottom: 1px solid #e9e2d5;
+	padding: 20px;
+}
+
+header[role=banner] {
+	margin-bottom: 40px;
+}
+
+section[role=main] {
+	float: left;
+	width: 560px;
+}
+
+#sidebar1 {
+	float: right;
+	width: 220px;
+}
+
+footer {
+	clear: both;
+	padding: 30px 0;
+}
+
+
+
+/******************************************************************/
+
+
 body {
 
 }
 
-a, a:visited { color: #f01d4f; }
-a:hover, a:focus { color: #f05e81; }
+a, a:visited {
+
+}
+
+a:hover, a:focus {
+
+}
 a:active {} /* on click */
 a:link { -webkit-tap-highlight-color : rgba(0,0,0,0); /* this highlights links on Iphones / iPads */ }
 
@@ -134,62 +203,9 @@ Text selection styles
 Navigation styles
 (Main Navigation)
 ******************************************************************/
-nav[role=navigation] {}
+nav[role=navigation] {
 
-	nav[role=navigation] .menu {
-		margin: 1.1em 0;
-	}
-	nav[role=navigation] .menu ul { 
-		background: #4598bb;
-	}
-		nav[role=navigation] .menu ul li {
-			float: left;
-		}
-			nav[role=navigation] .menu ul li a { 
-				color: #fefefe;
-				font-weight: 700;
-				padding: 10px 20px;
-				display: block; 
-				text-decoration: none;
-				text-shadow: 0 -1px 1px rgba(0,0,0,0.33); 
-			}
-				nav[role=navigation] .menu ul li a:hover { 
-					background: #4eabd2; 
-					color: #fff; 
-				}
-				
-				nav[role=navigation] .menu ul li:first-child a {}
-				
-		nav[role=navigation] .menu ul li.current-menu-item a, 
-		nav[role=navigation] .menu ul li.current_page_item a,
-		nav[role=navigation] .menu ul li.current-page-ancestor a {}
-
-		/* sub menus */
-		nav[role=navigation] .menu ul li ul, nav[role=navigation] .menu ul li ul li ul { 
-			background: #4598bb;
-			position: absolute; 
-			left: -9999em; 
-			z-index: 9999; 
-			width: 200px; 
-		}
-			nav[role=navigation] .menu ul li ul li ul { 
-				margin-left: 200px; 
-				top: auto; 
-				margin-top: -30px; 
-			}
-			nav[role=navigation] .menu ul li ul li:hover ul, nav[role=navigation] .menu ul li:hover ul { 
-				left: auto; 
-			}
-			nav[role=navigation] .menu ul li ul li a { 
-				width: 160px; 
-			}
-			
-			nav[role=navigation] .menu ul li ul li a {}
-				nav[role=navigation] .menu ul li ul li a:hover {}
-			nav[role=navigation] .menu ul li ul li:last-child a {}
-
-				nav[role=navigation] .menu ul li ul li ul.sub-menu { }
-					nav[role=navigation] .menu ul li ul li:hover ul.sub-menu { }
+}
 
 	
 /******************************************************************
