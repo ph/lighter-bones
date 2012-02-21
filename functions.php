@@ -87,7 +87,7 @@ function bones_register_sidebars() {
 function bones_comments($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
 	<li <?php comment_class(); ?>>
-		<article id="comment-<?php comment_ID(); ?>" class="clearfix">
+		<article id="comment-<?php comment_ID(); ?>">
 			<header class="comment-author vcard">
 				<?php echo get_avatar($comment,$size='32',$default='<path_to_url>' ); ?>
 				<?php printf(__('<cite class="fn">%s</cite>'), get_comment_author_link()) ?>

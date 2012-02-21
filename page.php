@@ -6,10 +6,10 @@
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 						
 						<header>
-							<h2 class="page-title" itemprop="headline"><?php the_title(); ?></h2>
+							<h2 class="page-title"><?php the_title(); ?></h2>
 							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?>.</p>
 						</header><!-- end article header -->
 					
