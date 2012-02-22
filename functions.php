@@ -99,7 +99,7 @@ function bones_comments($comment, $args, $depth) {
           			<p><?php _e('Your comment is awaiting moderation.') ?></p>
           		</div>
 			<?php endif; ?>
-			<section class="comment_content clearfix">
+			<section class="comment_content">
 				<?php comment_text() ?>
 			</section>
 			<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>

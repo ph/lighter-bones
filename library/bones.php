@@ -98,7 +98,7 @@ function bones_main_nav() {
     	array( 
     		'menu' => 'main_nav', /* menu name */
     		'theme_location' => 'main_nav', /* where in the theme it's assigned */
-    		'container_class' => 'menu clearfix', /* container class */
+    		'container_class' => 'menu', /* container class */
     		'fallback_cb' => 'bones_main_nav_fallback' /* menu fallback */
     	)
     );
@@ -110,7 +110,7 @@ function bones_footer_links() {
     	array(
     		'menu' => 'footer_links', /* menu name */
     		'theme_location' => 'footer_links', /* where in the theme it's assigned */
-    		'container_class' => 'footer-links clearfix', /* container class */
+    		'container_class' => 'footer-links', /* container class */
     		'fallback_cb' => 'bones_footer_links_fallback' /* menu fallback */
     	)
 	);
@@ -185,7 +185,7 @@ function page_navi($before = '', $after = '') {
 	if($start_page <= 0) {
 		$start_page = 1;
 	}
-	echo $before.'<nav class="page-navigation"><ol class="bones_page_navi clearfix">'."";
+	echo $before.'<nav class="page-navigation"><ol class="bones_page_navi">'."";
 	if ($start_page >= 2 && $pages_to_show < $max_page) {
 		$first_page_text = "First";
 		echo '<li class="bpn-first-page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';
