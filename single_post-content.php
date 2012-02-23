@@ -11,7 +11,7 @@
 					
 						<section class="post_content">
 							<?php 
-							if($contentlength != 'archive'):
+							if(isset($contentlength) && $contentlength != 'archive'):
 								the_content();
 							else:
 								the_post_thumbnail( 'bones-thumb-300' );
