@@ -22,7 +22,7 @@
 				 	global $contentlength; $contentlength = 'archive';
 
 					if (have_posts()) : while (have_posts()) : the_post();
-						include (TEMPLATEPATH . "/single_postcontent.php");
+						include (TEMPLATEPATH . "/single_post-content.php");
 
 					endwhile; ?>
 
